@@ -1,4 +1,4 @@
-combos <- paste0(rep(c("Melbourne", "Sydney", "Brisbane"), each = 6), 2000:2005)
+combos <- paste0(rep(c("Canberra", "Adelaide", "Perth"), each = 6), 2000:2005)
 data <- data.frame(variables = combos,
                    result = rnorm(18))
 
