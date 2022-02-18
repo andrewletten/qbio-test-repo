@@ -2,7 +2,7 @@ combos <- paste0(rep(c("Cape Town", "Berlin", "Dublin"), each = 6), 2000:2005)
 data <- data.frame(variables = combos,
                    result = rnorm(18))
 
-data$year <- gsub("[A-z]+([0-9]+)", "\\1", data$variables) # foo
+data$year <- gsub("[A-z]+([0-9]+)", "\\1", data$variables) # bar
 data$city <- gsub("([A-z]{4})[A-z]+[0-9]+", "\\1", data$variables)
 data$cityyearflip <- gsub("([A-z]+)([0-9]+)", "year\\2_city\\1", data$variables)
 
